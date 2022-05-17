@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lista de tarefas</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="w-full p-4 bg-slate-700">
+        <img src="./images/logo.png" alt="Checked icon" class="w-10">
+    </header>
+
+    <main class="mb-20">
+        <h1 class="text-center mt-2 text-3xl">Nova tarefa</h1>
+        <form name="task" class="bg-slate-500 p-3 mt-2 w-4/6 m-auto rounded">
+            <div class="mb-3 flex flex-col">
+                <label class="text-white" for="title">Titulo</label>
+                <input required class="rounded p-1" type="text" name="title" id="title">
+            </div>
+            <div class="mb-3 flex flex-col">
+                <label class="text-white" for="description">Descrição</label>
+                <input required class="rounded p-1" type="text" name="description" id="description">
+            </div>
+            <div>
+                <button class="py-1 px-4 rounded bg-red-400 text-gray-800 hover:bg-red-500" type="reset">Limpar</button>
+                <button class="py-1 px-4 rounded bg-emerald-400 text-gray-800 hover:bg-emerald-500">Salvar</button>
+            </div>
+        </form>
+
+        <section id="tasks" class="overflow-y-auto max-h-80 bg-slate-500 p-3 mt-2 w-4/6 m-auto rounded">
+            <h1 class="text-center mb-2 text-white text-3xl">Tarefas</h1>
+        </section>
+    </main>
+
+    <footer class="w-full bg-slate-700 p-4 fixed bottom-0">
+        <span class="text-white">Feito com ❤️ Faculdade iv2®</span>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
